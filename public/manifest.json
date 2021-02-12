@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Image Mining",
+  "name": "Get images from social medias and mega cloud storage",
   "icons": [
     {
       "src": "favicon.ico",
