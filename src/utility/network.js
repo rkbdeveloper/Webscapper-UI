@@ -1,6 +1,6 @@
 
 /**
- * 
+ * Sends a GET request to the server
  * @param {string} api_link
  * @param {function with one parameter} success_callback 
  * @param {function with one parameter} fail_callback 

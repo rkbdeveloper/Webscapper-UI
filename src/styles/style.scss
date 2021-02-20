@@ -15,6 +15,18 @@
     padding-top: 1rem;
     width: 80vw;
     height: 10vh;
+
+    @include media("<=phone") {
+        width: 95vw;
+        .tab{
+            font-size: 12px;
+        }
+    }
+    
+    @include media(">phone") {
+        width: 85vw;
+    }
+
     .tab{
         background-color: $home-dark-accent-color;
         border-radius: $main-header-border-radius;
@@ -73,9 +85,16 @@
     display: none;
 }
 
-.content.title{
-    font-size: 10em;
+.text-location{
+
     color: black;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    .title{
+        font-size: 1.6rem;
+    }
 }
 
 .forms{
@@ -112,19 +131,19 @@
     }
 
     input[name="facebook-button"]{
-        background-color: #4B588F;
+        background-color: $facebook-color;
     }
     
     input[name="mega-button"]{
-        background-color: #C32929;
+        background-color: $mega-color;
     }
     
     input[name="instagram-button"]{
-        background-color: #A62D7E;
+        background-color: $instagram-color;
     }
     
     input[name="snapchat-button"]{
-        background-color: #F2E24B;
+        background-color: $snapchat-color;
     }
 
     input[type="url"]{
@@ -132,13 +151,37 @@
         margin: 2px;
         border-width: 1px;
         height: 27px;
-        
+        width: 80%;
     }
 
     .link-img{
         height: 25px;
         width: 25px;
     }
+
+    @include media(">375px", "<815px") {
+        width: 40vh;
+    }
+
+    @include media(">=815px", "<desktop") {
+        
+    }
+
+    @include media(">desktop") {
+        display: inline-flex;
+        flex-direction: row;
+        width: 40vw;
+
+        label{
+            width: 30%;
+        }
+
+        div{
+            width: 70%;
+        }
+    }
+
+    
     
 }
 
@@ -146,7 +189,7 @@
 
 
 .data-collection {
-    column-count:         5;
+    column-count:         3;
     column-gap:           0;  
 
     img{
@@ -158,16 +201,16 @@
         column-count: 1;
     }
     
-    @include media(">phone") {
-        column-count: 3;    
+    @include media(">phone", "<715px")  {
+        column-count: 2;    
     }
 
     @include media(">=815px", "<desktop") {
-        column-count: 3;  
+        column-count: 4;  
     }
 
     @include media(">=desktop") {
-        column-count: 3;
+        column-count: 4;
     }
 
     @include media(">desktop") {
@@ -177,3 +220,93 @@
 
 
 
+.facebook{
+
+    justify-content:center;
+    flex-direction: row;
+    
+    .facebook-link{
+
+        display: flex;
+        justify-content: center;
+        height: 75px;
+        align-content: center;
+
+        div{
+            align-self: center;
+        }
+
+        @include media("<=phone") {
+            height: 50px;
+            flex-direction: row;
+            label {
+                font-size: 0;
+            }
+        }
+        
+        @include media(">=375px", "<815px") {
+            width:100%!important;
+            flex-direction: row;
+        }
+
+        @include media(">=815px", "<=desktop") {
+            flex-direction: row;
+            width: 100%;
+        }
+
+        @include media(">desktop") {
+            width:100%!important;
+            label{
+                width: 8%;
+            }
+
+            div{
+                width: 30%;
+            }
+        }
+
+        @include media(">=2560px") {
+            width:100%!important;
+            label{
+                width: 5%;
+            }
+
+            div{
+                width: 20%;
+            }
+        }
+
+    }
+}
+
+
+.download-button{
+    justify-self: flex-end!important;
+    width: 9%!important;
+    text-align:center;
+    padding: 9px;
+    border: 1px solid;
+    border-radius: 12px; 
+    cursor: pointer;
+
+    @include media("<815px") {
+        font-size: 0;
+    }
+}
+
+.facebook .download-button{
+    border-color: transparent;
+    background-color: $facebook-color;
+    color:white;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;    
+
+    img{
+        stroke:none;
+        fill-rule:nonzero;
+        fill:white;
+        fill-opacity:1
+    }
+}

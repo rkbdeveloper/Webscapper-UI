@@ -19,7 +19,10 @@ class Home extends React.Component {
 
     render(){
         return (<div className={`content ${this.props.currentTab !== "home"? "hide" : "show"}`}>
-                    <div className="title"> Get data from websites</div>
+                    <div className="text-location"> 
+                        <div className="title">Data Mining</div>
+                        <div className="Description">Get Images and Videos from websites. Facebook, Snapchat, Mega and, Instagram</div>
+                    </div>
                     <div className="forms">
                         {/* facebook link */}
                         <form className="link facebook-link" onSubmit={this.OnSubmitForm} name="facebook">

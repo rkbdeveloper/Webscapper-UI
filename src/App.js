@@ -37,7 +37,7 @@ class App extends React.Component {
 
 
   GetTabs(){
-    return APP_TABS.map(tab => (<div className="tab-item" onClick={() => this.ChangeTab(tab)}>{tab}</div>))
+    return APP_TABS.map((tab, index) => (<div key={"tab_"+index} className="tab-item" onClick={() => this.ChangeTab(tab)}>{tab}</div>))
   }
   
   ChangeTab(val){
