@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Webscapper-UI/static/css/main.a9f0bef5.chunk.css",
-    "main.js": "/Webscapper-UI/static/js/main.b7611acc.chunk.js",
-    "main.js.map": "/Webscapper-UI/static/js/main.b7611acc.chunk.js.map",
+    "main.css": "/Webscapper-UI/static/css/main.5ccc002f.chunk.css",
+    "main.js": "/Webscapper-UI/static/js/main.d308e04a.chunk.js",
+    "main.js.map": "/Webscapper-UI/static/js/main.d308e04a.chunk.js.map",
     "runtime-main.js": "/Webscapper-UI/static/js/runtime-main.3616f99c.js",
     "runtime-main.js.map": "/Webscapper-UI/static/js/runtime-main.3616f99c.js.map",
     "static/js/2.54f9395f.chunk.js": "/Webscapper-UI/static/js/2.54f9395f.chunk.js",
@@ -10,8 +10,9 @@
     "static/js/3.0c267cab.chunk.js": "/Webscapper-UI/static/js/3.0c267cab.chunk.js",
     "static/js/3.0c267cab.chunk.js.map": "/Webscapper-UI/static/js/3.0c267cab.chunk.js.map",
     "index.html": "/Webscapper-UI/index.html",
-    "static/css/main.a9f0bef5.chunk.css.map": "/Webscapper-UI/static/css/main.a9f0bef5.chunk.css.map",
+    "static/css/main.5ccc002f.chunk.css.map": "/Webscapper-UI/static/css/main.5ccc002f.chunk.css.map",
     "static/js/2.54f9395f.chunk.js.LICENSE.txt": "/Webscapper-UI/static/js/2.54f9395f.chunk.js.LICENSE.txt",
+    "static/media/download.9ef2feec.svg": "/Webscapper-UI/static/media/download.9ef2feec.svg",
     "static/media/instagram.75e0546a.png": "/Webscapper-UI/static/media/instagram.75e0546a.png",
     "static/media/mega.2088a48f.png": "/Webscapper-UI/static/media/mega.2088a48f.png",
     "static/media/snapchat.ee3b6f69.png": "/Webscapper-UI/static/media/snapchat.ee3b6f69.png"
@@ -19,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.3616f99c.js",
     "static/js/2.54f9395f.chunk.js",
-    "static/css/main.a9f0bef5.chunk.css",
-    "static/js/main.b7611acc.chunk.js"
+    "static/css/main.5ccc002f.chunk.css",
+    "static/js/main.d308e04a.chunk.js"
   ]
 }
